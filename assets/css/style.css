@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILIZAÇÃO DO BODY */
+body {
+  background-image:url('../images/space.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  color: #fff;
+  font-family: 'Share Tech Mono', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+body * {
+  z-index: 1;
+}
+
+/* ESTILIZAÇÃO DA CAIXA DO CRONOMETRO */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 600px;
+  height: 300px;
+  
+  border-radius: 10px;
+  background-color: rgba(53, 10, 90, 0.5);
+}
+
+
+/* TEXTO DO CRONOMETRO */
+h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px black;
+}
+
+/* NUMEROS DA CONTAGEM */
+span {
+  font-size: 40px;
+}
+
+/* ESTILIZAÇÃO DOS BOTÕES */
+button {
+  border: none;
+  border-radius: 5px;
+  width: 70px; 
+  height: 20px;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px black;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+}
+
+[name=start] {
+  background-color: #4DBCF8;
+}
+
+[name=pause] {
+  background-color: #D355C3;
+}
+
+[name=reset] {
+  background-color: #2B3CD6;
+}
+
